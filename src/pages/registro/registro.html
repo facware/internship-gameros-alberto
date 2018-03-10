@@ -15,38 +15,42 @@
 
 <ion-content padding>
   <div>
-    //Registro del nombre
+    <!-->Registro del nombre-->
     <ion-item>
       <ion-label floating><ion-icon name="contact">  Nombre</ion-icon></ion-label>
        <ion-input type="text" value="" block></ion-input>
+    </ion-item>   
+    <ion-item>
        <ion-label floating><ion-icon name="">  Apellido</ion-icon></ion-label>
        <ion-input type="text" value="" block></ion-input>
     </ion-item>
-    //Registro del correo
+    <!--Registro del correo-->
     <ion-item>
       <ion-label floating><ion-icon name="mail"></ion-icon></ion-label>
       <ion-input type="text" value="" block></ion-input>
     </ion-item>
-    //Registro de contraseña y confirmación
+    <!--Registro de contraseña y confirmación-->
     <ion-item>
       <ion-label floating><ion-icon name="lock">Contraseña</ion-icon></ion-label>
       <ion-input type="password" value="" block></ion-input>
+    </ion-item>   
+    <ion-item>
       <ion-label floating><ion-icon name="check">Confirmar contraseña</ion-icon></ion-label>
       <ion-input type="password" value="" block></ion-input>
     </ion-item>
-    //seleccion de genero
-    <ion-list radio-group [(ngModel)]="gender">
+    <!--seleccion de genero-->
+    <ion-list radio-group >
         <ion-list-header>
             Sexo
           </ion-list-header>
           <ion-item>
-              <ion-label>Cord</ion-label>
-              <ion-radio value="cord"></ion-radio>
+              <ion-label><ion-icon name="male"></ion-icon> Hombre </ion-label>
+              <ion-radio value="male" ><p>male</p></ion-radio>
             </ion-item>
           
             <ion-item>
-              <ion-label>Duesenberg</ion-label>
-              <ion-radio value="duesenberg"></ion-radio>
+              <ion-label><ion-icon name="female"></ion-icon> Mujer </ion-label>
+              <ion-radio value="female"></ion-radio>
             </ion-item>
 
     </ion-list>
