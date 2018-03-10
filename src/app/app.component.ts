@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -6,6 +7,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 //Se importa la pagina de Login
 import { LoginPage } from '../pages/login/login';
+//Se importa la página de registro
+import { RegistroPage } from './../pages/registro/registro';
 
 @Component({
   templateUrl: 'app.html'

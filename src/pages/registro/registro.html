@@ -1,0 +1,54 @@
+<!--
+  Generated template for the RegistroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Regístrate</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    //Registro del nombre
+    <ion-item>
+      <ion-label floating><ion-icon name="contact">  Nombre</ion-icon></ion-label>
+       <ion-input type="text" value="" block></ion-input>
+       <ion-label floating><ion-icon name="">  Apellido</ion-icon></ion-label>
+       <ion-input type="text" value="" block></ion-input>
+    </ion-item>
+    //Registro del correo
+    <ion-item>
+      <ion-label floating><ion-icon name="mail"></ion-icon></ion-label>
+      <ion-input type="text" value="" block></ion-input>
+    </ion-item>
+    //Registro de contraseña y confirmación
+    <ion-item>
+      <ion-label floating><ion-icon name="lock">Contraseña</ion-icon></ion-label>
+      <ion-input type="password" value="" block></ion-input>
+      <ion-label floating><ion-icon name="check">Confirmar contraseña</ion-icon></ion-label>
+      <ion-input type="password" value="" block></ion-input>
+    </ion-item>
+    //seleccion de genero
+    <ion-list radio-group [(ngModel)]="gender">
+        <ion-list-header>
+            Sexo
+          </ion-list-header>
+          <ion-item>
+              <ion-label>Cord</ion-label>
+              <ion-radio value="cord"></ion-radio>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Duesenberg</ion-label>
+              <ion-radio value="duesenberg"></ion-radio>
+            </ion-item>
+
+    </ion-list>
+  </div>
+</ion-content>
