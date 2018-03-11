@@ -43,33 +43,43 @@
         <ion-list-header>
             Sexo
           </ion-list-header>
-          <ion-item>
-              <ion-label><ion-icon name="male"></ion-icon> Hombre </ion-label>
-              <ion-radio value="male" ><p>male</p></ion-radio>
-            </ion-item>
-            <ion-item>
-              <ion-label><ion-icon name="female"></ion-icon> Mujer </ion-label>
-              <ion-radio value="female"></ion-radio>
-            </ion-item>
-            <ion-item>
-              <ion-label><ion-icon name="calendar"> Fecha de nacimiento</ion-icon></ion-label>
-              <ion-datetime displayFormat="MMM DD, YYYY" pickerFormat="MMM DD YYYY" [(ngModel)]="dateOfEvent"></ion-datetime>
-            </ion-item>
-            <ion-item>
-              <ion-label class="col-12"><ion-icon name="pin"></ion-icon> Estado y ciudad</ion-label>
-              <br>
-              <ion-select [(ngModel)]="Estado">
-                <ion-option value="nowhere">No Where</ion-option>
-              </ion-select>
-              <ion-select [(ngModel)]="Ciudad" >
-                <ion-option value="Nowhere" >No Where</ion-option>
-              </ion-select>
-            </ion-item>
-            <ion-item>
-              <button ion-button block >Regisrtar</button>
-             
-            </ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <ion-item>
+                      <ion-label><ion-icon name="male"></ion-icon> Hombre </ion-label>
+                      <ion-radio value="male" ><p>male</p></ion-radio>
+                  </ion-item>
+              </ion-col>
+              <ion-col>
+                  <ion-item >
+                      <ion-label><ion-icon name="female"></ion-icon> Mujer </ion-label>
+                      <ion-radio value="female"></ion-radio>
+                    </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+            
+            
     </ion-list>
-    
+    <ion-item>
+        <ion-label><ion-icon name="calendar"> Fecha de nacimiento</ion-icon></ion-label>
+        <ion-datetime displayFormat="MMM DD, YYYY" pickerFormat="MMM DD YYYY" [(ngModel)]="dateOfEvent"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label class="col-12"><ion-icon name="pin"></ion-icon> Estado y ciudad</ion-label>
+        <br>
+        <ion-select [(ngModel)]="Estado">
+          <ion-option value="nowhere">No Where</ion-option>
+        </ion-select>
+        <ion-select [(ngModel)]="Ciudad" >
+          <ion-option value="Nowhere" >No Where</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <button ion-button block >Regisrtar</button>
+       
+      </ion-item>
   </div>
 </ion-content>

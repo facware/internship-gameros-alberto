@@ -12,7 +12,7 @@ import { LoginPage } from '../pages/login/login';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  public rootPage:any = HomePage;
   //Variable booleana para el cambio de estatus
   isReady:boolean =false;
 

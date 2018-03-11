@@ -1,13 +1,8 @@
+import { TabPrincipalPage } from './../tabPrincipal/tabPrincipal';
+import { MyApp } from './../../app/app.component';
 import { RegistroPage } from './../registro/registro';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -16,8 +11,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   
 })
 export class LoginPage {
-
+  ma:MyApp;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {
@@ -26,6 +22,10 @@ export class LoginPage {
 
   goRegistrar(){
     this.navCtrl.push(RegistroPage);
+  }
+  
+  iniciarSesion(){
+       this.navCtrl.setRoot(TabPrincipalPage);
   }
 
 }

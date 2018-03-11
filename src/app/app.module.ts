@@ -1,3 +1,5 @@
+import { TabPrincipalPage } from './../PAGES/tabPrincipal/tabPrincipal';
+
 
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -15,7 +17,8 @@ import { RegistroPage } from './../pages/registro/registro';
     MyApp,
     HomePage,
     LoginPage,
-    RegistroPage
+    RegistroPage,
+    TabPrincipalPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { RegistroPage } from './../pages/registro/registro';
     MyApp,
     HomePage,
     LoginPage,
-    RegistroPage
+    RegistroPage,
+    TabPrincipalPage
   ],
   providers: [
     StatusBar,
