@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the SelectorPdfPage page.
+ * Generated class for the PdfSelectorPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-selector-pdf',
-  templateUrl: 'selector-pdf.html',
+  selector: 'page-pdf-selector',
+  templateUrl: 'pdf-selector.html',
 })
-export class SelectorPdfPage {
+export class PdfSelectorPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SelectorPdfPage');
+    console.log('ionViewDidLoad PdfSelectorPage');
   }
 
 }

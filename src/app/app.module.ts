@@ -1,5 +1,3 @@
-import { TabPrincipalPage } from './../PAGES/tabPrincipal/tabPrincipal';
-
 
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -12,13 +10,16 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { RegistroPage } from './../pages/registro/registro';
 
+import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
     RegistroPage,
-    TabPrincipalPage
+    TabPrincipalPage,
+    
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,8 @@ import { RegistroPage } from './../pages/registro/registro';
     HomePage,
     LoginPage,
     RegistroPage,
-    TabPrincipalPage
+    TabPrincipalPage,
+    
   ],
   providers: [
     StatusBar,

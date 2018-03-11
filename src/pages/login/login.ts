@@ -1,8 +1,9 @@
-import { TabPrincipalPage } from './../tabPrincipal/tabPrincipal';
+
 import { MyApp } from './../../app/app.component';
 import { RegistroPage } from './../registro/registro';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TabPrincipalPage } from '../tab-principal/tab-principal';
 
 @IonicPage()
 @Component({
@@ -11,7 +12,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   
 })
 export class LoginPage {
-  ma:MyApp;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     
   }
@@ -25,7 +26,7 @@ export class LoginPage {
   }
   
   iniciarSesion(){
-       this.navCtrl.setRoot(TabPrincipalPage);
+    this.navCtrl.setRoot(TabPrincipalPage);
   }
 
 }

@@ -15,7 +15,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class TabPrincipalPage {
 
-  selectorPdfRoot = 'SelectorPdfPage'
+  pdfSelectorRoot = 'PdfSelectorPage'
   contactoRoot = 'ContactoPage'
   usuarioRoot = 'UsuarioPage'
 
