@@ -14,5 +14,39 @@
 
 
 <ion-content padding>
-
+<ion-card>
+  <ion-card-content>
+    
+    <ion-card-header>
+      <ion-avatar item-start>
+        <ion-icon name="contacts"> Mis datos</ion-icon>
+        </ion-avatar>
+      </ion-card-header>
+    <ion-item>
+      <ion-label>Usuario</ion-label>
+      <ion-input id="user" type="text" value="USUARIO DEFAULT" disabled="true"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Correo</ion-label>
+        <ion-input id="email" type="text" value="CORREO DEFAULT" disabled="true"></ion-input>
+      </ion-item>
+    <button ion-button icon-only >
+      <ion-icon name="create"> </ion-icon>
+    </button>
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-content>
+    <ion-card-header>
+      Seguridad
+    </ion-card-header>
+    <ion-item>
+      <ion-label>Contraseña</ion-label>
+      <ion-input id="pswd" type="password" value="12341234" disabled="true"></ion-input>
+    </ion-item>
+    <button ion-button icon-only>
+      <ion-icon name="create" > </ion-icon>
+    </button>
+  </ion-card-content>
+</ion-card>
 </ion-content>

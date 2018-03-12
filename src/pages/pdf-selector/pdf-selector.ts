@@ -1,3 +1,4 @@
+import { PdfviewerPage } from './../pdfviewer/pdfviewer';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -14,12 +15,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pdf-selector.html',
 })
 export class PdfSelectorPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PdfSelectorPage');
+  }
+  goPDFViewer(){
+    this.navCtrl.push(PdfviewerPage);
   }
 
 }

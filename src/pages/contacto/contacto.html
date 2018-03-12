@@ -18,32 +18,31 @@
     <h1>App MAGAZINE</h1>
   </div>
   <div>
-    <button ion-button icon-left >
-      <ion-icon name="star">FB</ion-icon>
+    <button ion-button  >
+      <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
     </button>
-    <button ion-button icon-left >
-      <ion-icon name="star">TW</ion-icon>
+    <button ion-button  >
+      <ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon>
     </button>
-    <button ion-button icon-left >
-      <ion-icon name="star">IG</ion-icon>
+    <button ion-button  >
+      <ion-icon ios="logo-instagram" md="logo-instagram"></ion-icon>
     </button>
   </div>
   <div>
     <ion-item>
-      <ion-label>Nombre</ion-label>
+      <ion-label stacked>Nombre</ion-label>
       <ion-input type="text" placeholder="Nombre - Apellido"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Correo Electronico</ion-label>
+      <ion-label stacked>Correo Electronico</ion-label>
       <ion-input type="email" placeholder="ejemplo@hotmail.com"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Asunto</ion-label>
-      <ion-input type="text" placeholder="Descripcion breve"></ion-input>
+      <ion-label stacked>Asunto</ion-label>
+      <ion-input type="text" placeholder="Descripcion breve" [autocorrect]="true" clearInput="true"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Mensaje</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-textarea placeholder="Mensaje" type="text" [autocorrect]="true" clearInput="true"></ion-textarea>
     </ion-item>
     <button ion-button block>Enviar</button>
   </div>

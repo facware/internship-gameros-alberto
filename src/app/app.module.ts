@@ -11,6 +11,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegistroPage } from './../pages/registro/registro';
 
 import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
+import { PdfviewerPage } from '../pages/pdfviewer/pdfviewer';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
     LoginPage,
     RegistroPage,
     TabPrincipalPage,
-    
+    PdfviewerPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,7 @@ import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
     LoginPage,
     RegistroPage,
     TabPrincipalPage,
-    
+    PdfviewerPage
   ],
   providers: [
     StatusBar,
