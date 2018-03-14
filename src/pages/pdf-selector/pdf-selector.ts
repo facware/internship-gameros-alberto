@@ -25,4 +25,13 @@ export class PdfSelectorPage {
     this.navCtrl.push(PdfviewerPage);
   }
 
+  cargardatos() {
+    var text = "";
+for (let i = 0; i < 5;  i++) {
+    
+        text += "<ion-slide>Archivo "+i+" <button ion-button (click)='goPDFViewer()'> Abrir PDF </button> </ion-slide>";   
+    
+}
+document.getElementById("seleccionarPDF").innerHTML = text;
+}
 }
