@@ -1,5 +1,5 @@
 import { PdfviewerPage } from './../pdfviewer/pdfviewer';
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -14,8 +14,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-pdf-selector',
   templateUrl: 'pdf-selector.html',
 })
+
+
 export class PdfSelectorPage {
+  prueba:string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.prueba="wasumasu";
+    this.cargardatos();
   }
 
   ionViewDidLoad() {
@@ -26,12 +31,8 @@ export class PdfSelectorPage {
   }
 
   cargardatos() {
-    var text = "";
-for (let i = 0; i < 5;  i++) {
-    
-        text += "<ion-slide>Archivo "+i+" <button ion-button (click)='goPDFViewer()'> Abrir PDF </button> </ion-slide>";   
-    
-}
-document.getElementById("seleccionarPDF").innerHTML = text;
-}
+     //document.getElementById("contenido").innerHTML = "<p>Hello <b>world</b>!</p>";
+    var text = document.createElement("p");
+    document.getElementById("contenido").appendChild(text);
+  }
 }

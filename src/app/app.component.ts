@@ -36,7 +36,7 @@ export class MyApp {
     if (this.isReady) {
       this.rootPage = any;
     } else {
-      console.log("Baia baia, algo salio mal");
+      console.log("Error al cargar pagina");
 
     }
   }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 /**
  * Generated class for the PdfviewerPage page.
  *
@@ -13,10 +12,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-pdfviewer',
   templateUrl: 'pdfviewer.html',
 })
-export class PdfviewerPage {
 
+export class PdfviewerPage {
+  document;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
+
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PdfviewerPage');

@@ -1,9 +1,10 @@
-
-import { MyApp } from './../../app/app.component';
 import { RegistroPage } from './../registro/registro';
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabPrincipalPage } from '../tab-principal/tab-principal';
+
+
 
 @IonicPage()
 @Component({
