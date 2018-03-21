@@ -20,7 +20,6 @@ export class PdfSelectorPage {
   prueba:string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.prueba="wasumasu";
-    this.cargardatos();
   }
 
   ionViewDidLoad() {
@@ -31,8 +30,6 @@ export class PdfSelectorPage {
   }
 
   cargardatos() {
-     //document.getElementById("contenido").innerHTML = "<p>Hello <b>world</b>!</p>";
-    var text = document.createElement("p");
-    document.getElementById("contenido").appendChild(text);
+    
   }
 }
