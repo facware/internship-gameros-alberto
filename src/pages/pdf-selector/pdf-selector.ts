@@ -17,9 +17,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
 export class PdfSelectorPage {
-  prueba:string;
+
+  //Variables
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.prueba="wasumasu";
+    
   }
 
   ionViewDidLoad() {
@@ -29,7 +31,7 @@ export class PdfSelectorPage {
     this.navCtrl.push(PdfviewerPage);
   }
 
-  cargardatos() {
+  cargardatos( newItem:string):void {
     
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { FileOpener } from '@ionic-native/file-opener';
+/*import { FileOpener } from '@ionic-native/file-opener';*/
 /**
  * Generated class for the PdfviewerPage page.
  *
@@ -16,8 +16,7 @@ import { FileOpener } from '@ionic-native/file-opener';
 
 export class PdfviewerPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,  private fileOpener : FileOpener) {
-    this.fileOpener.open('D:/IonicProyects/appmagazine/src/assets/pdf/am.pdf','aplication/pdf').then(() => console.log("Archivo abierto")).catch(e => console.log("Error: ",e));
+  constructor(public navCtrl: NavController, public navParams: NavParams,  ) {
   }
 
   ionViewDidLoad() {
