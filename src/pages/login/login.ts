@@ -27,12 +27,12 @@ export class LoginPage {
   }
   
   iniciarSesion(){
-    if (condition) {
-      
+    if (true) {
+      this.navCtrl.setRoot(TabPrincipalPage);
     } else {
       
     }
-    this.navCtrl.setRoot(TabPrincipalPage);
+    
   }
 
 }

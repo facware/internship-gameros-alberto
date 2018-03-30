@@ -15,15 +15,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 
 export class PdfviewerPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams,  ) {
+  url:string;
+  constructor(public navCtrl: NavController, public navParams: NavParams  ) {
+    this.url ="../../assets/pdf/am.pdf";
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PdfviewerPage');
   }
 
-  /*abrirPDF(){
-    this.fileOpener.open('D:/IonicProyects/appmagazine/src/assets/pdf/am.pdf','aplication/pdf').then(() => console.log("Archivo abierto")).catch(e => console.log("Error: ",e))
-  }*/
+  
 }

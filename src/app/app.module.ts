@@ -1,5 +1,4 @@
-import { FileOpener } from '@ionic-native/file-opener';
-
+import { PdfviewerPage } from './../pages/pdfviewer/pdfviewer';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -13,13 +12,13 @@ import { RegistroPage } from './../pages/registro/registro';
 
 import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
 
-
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
     RegistroPage,
+    PdfviewerPage,
     TabPrincipalPage
   ],
   imports: [
@@ -32,12 +31,13 @@ import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
     HomePage,
     LoginPage,
     RegistroPage,
+    PdfviewerPage,
     TabPrincipalPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    FileOpener,
+    
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
