@@ -14,9 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 
 export class PdfviewerPage {
-  url:string;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams  ) {
-    this.url ="../../assets/pdf/am.pdf";
     
   }
 
@@ -24,10 +23,7 @@ export class PdfviewerPage {
     console.log('ionViewDidLoad PdfviewerPage');
   }
   cargarPDF(){
-    //var t=new HTMLDocument;
-    var jf= document.getElementById("pdf");
-    jf.setAttribute("src",this.url);
-    jf.replaceChild.apply(jf);
+    
 
   }
 

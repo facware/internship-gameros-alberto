@@ -87,4 +87,5 @@
     <plugin name="cordova-plugin-file-opener2" spec="^2.0.19" />
     <plugin name="cordova-plugin-document-viewer" spec="^0.9.9" />
     <plugin name="cordova-plugin-filepath" spec="^1.2.0" />
+    <plugin name="cordova-plugin-file" spec="^6.0.1" />
 </widget>

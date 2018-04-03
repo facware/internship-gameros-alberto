@@ -1,7 +1,8 @@
 
 import { PdfviewerPage } from './../pdfviewer/pdfviewer';
-import { Component, NgModule } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams, IonicApp } from 'ionic-angular';
+import { DOCUMENT } from '@angular/common';
 
 /**
  * Generated class for the PdfSelectorPage page.
@@ -20,9 +21,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class PdfSelectorPage {
 
   //Variables
+  private directorio = [
+    { 'name': 'AppMagazine' , 'path': '../../assets/imgs/AppMagazine.png' }
+  ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, ) {
-    
+  constructor(public navCtrl: NavController, public navParams: NavParams ) {
+    this.loadFiles()
   }
   
   ionViewDidLoad() {
@@ -31,5 +35,11 @@ export class PdfSelectorPage {
   goPDFViewer(){
     this.navCtrl.push(PdfviewerPage);
   }
-  
+  loadFiles(){
+    for (let i = 0; i < 5; i++) {
+      this.directorio.push( { 'name': 'Archivo ' + (i + 1), 'path':'../../assets/imgs/AppMagazine.png'})
+    }
+  }
+
 }
+
