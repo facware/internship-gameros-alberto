@@ -17,25 +17,22 @@
 <div class="divLogo">
   <img class="logo" src="../assets/imgs/logo.png">
 </div>
-<div>
-  <ion-item>
-    <ion-label floating><ion-icon name="contact">  Correo electrónico</ion-icon></ion-label>
-     <ion-input type="text" value="" block></ion-input>
+<form id=formId (ngSubmit)="iniciarSesion()" #refForm="ngForm">
+  <div>
+    <ion-item>
+    <ion-label floating><ion-icon>  Correo electrónico</ion-icon></ion-label>
+     <ion-input type="text" #email block ></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label floating><ion-icon name="key">  Contraseña</ion-icon></ion-label>
-     <ion-input type="text" value="" block></ion-input>
+    <ion-label floating><ion-icon>  Contraseña</ion-icon></ion-label>
+     <ion-input type="password" value="" block #pswd></ion-input>
   </ion-item>
-</div>
-<div>
-  <button ion-button block color="danger" (click)="iniciarSesion()">Iniciar Sesión</button>
+  <button ion-button block color="danger" type="submit">Iniciar Sesión</button>
+  </div>  
+</form>
+  
   <p>ó</p>
   <button ion-button block color="default">Iniciar sesión con facebook</button>
   <br><p><a href="#">¿Olvidaste tu contraseña?</a></p>
-</div>
-<ion-footer>
-    <ion-toolbar>
-      <button ion-button block color danger (click)="goRegistrar()">Crear una cuenta</button>
-    </ion-toolbar>
-  </ion-footer>
+  <button ion-button block color danger (click)="goRegistrar()">Crear una cuenta</button>
 </ion-content>

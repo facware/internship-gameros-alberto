@@ -1,9 +1,8 @@
+import { File } from '@ionic-native/file';
 
 import { PdfviewerPage } from './../pdfviewer/pdfviewer';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, IonicApp } from 'ionic-angular';
-import { DOCUMENT } from '@angular/common';
-
 /**
  * Generated class for the PdfSelectorPage page.
  *
@@ -25,7 +24,7 @@ export class PdfSelectorPage {
     { 'name': 'AppMagazine' , 'path': '../../assets/imgs/AppMagazine.png' }
   ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.loadFiles()
   }
   

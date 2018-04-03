@@ -1,6 +1,6 @@
 {
   "name": "appmagazine",
-  "app_id": "",
+  "app_id": "863d793b",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
