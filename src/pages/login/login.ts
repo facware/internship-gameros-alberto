@@ -14,7 +14,6 @@ import { AlertController } from 'ionic-angular';
 })
 export class LoginPage {
 
-  userlog=[{'email':'','contraseña':''}];
   @ViewChild('email') uname;
   @ViewChild('pswd') passw;
   
@@ -26,9 +25,9 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  presentAlert( ) {
+  presentAlert( mensaje) {
     let alert = this.alertCtrl.create({
-      title: 'Estas Dentro',
+      title: mensaje,
       subTitle: 'Presiona OK para continuar',
       buttons: ['OK']
     });
@@ -41,19 +40,23 @@ export class LoginPage {
   }
   
   iniciarSesion(){
-    console.log(this.uname.value, this.passw.value)
-    this.userlog = [{ 'email': this.uname.value,'contraseña':this.passw.value}]
-    if (this.userlog.values!==null) {
-      this.presentAlert();
-      this.navCtrl.setRoot(TabPrincipalPage);
+    var ulog=new Array();
+    ulog[0] = [this.uname.value];
+    ulog[1] = [this.passw.value];
+    //Primero comprovamos que los campos no esten vacios
+    if (ulog[0].toString().length > 0 && ulog[0].toString().length > 0) {
+      //Despues comprovamos que "existe" la cuenta
+      if (this.uname.value == "c.alberto.gameros.b@gmail.com" && this.passw.value == "123123") {
+        this.presentAlert("Sesión iniciada correctamente");
+        this.navCtrl.setRoot(TabPrincipalPage);
+      } else {
+        this.presentAlert("Campos invalidos, revise e intentelo nuevamente")
+      }
     } else {
-      let alert = this.alertCtrl.create({
-        title: 'Faltaron datos o no se reconoce usuario',
-        subTitle: 'Presiona OK para volver a intentarlo',
-        buttons: ['OK']
-      });
-      alert.present();
+      this.presentAlert("Faltaron algunos campos")
     }
+
+    
     
   }
 

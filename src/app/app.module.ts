@@ -11,6 +11,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegistroPage } from './../pages/registro/registro';
 
 import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
+import { DatabaseProvider } from '../providers/database/database';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
     StatusBar,
     SplashScreen,
     
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DatabaseProvider
   ]
 })
 export class AppModule {}
