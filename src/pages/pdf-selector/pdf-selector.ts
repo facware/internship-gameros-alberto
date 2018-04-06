@@ -21,24 +21,26 @@ export class PdfSelectorPage {
 
   //Variables
   private directorio = [
-    { 'name': 'AppMagazine' , 'path': '../../assets/imgs/AppMagazine.png' }
+    { 'name': 'AppMagazine', 'path': '../../assets/imgs/AppMagazine.png', 'URL':'../../assets/pdf/am.pdf' },
+    { 'name': 'Seminario Estadias', 'path': '../../assets/imgs/SeminarioInformeEstadia.png', 'URL':'./../assets/pdf/SeminarioInformeEstadia.pdf' }
   ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.loadFiles()
+    //this.loadFiles()
   }
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad PdfSelectorPage');
   }
-  goPDFViewer(){
-    this.navCtrl.push(PdfviewerPage);
+  goPDFViewer(i){
+    var p=this.directorio[i];
+    this.navCtrl.push(PdfviewerPage,p);
   }
-  loadFiles(){
+  /*loadFiles(){
     for (let i = 0; i < 5; i++) {
       this.directorio.push( { 'name': 'Archivo ' + (i + 1), 'path':'../../assets/imgs/AppMagazine.png'})
     }
-  }
+  }*/
 
 }
 

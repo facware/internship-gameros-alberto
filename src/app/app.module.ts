@@ -12,6 +12,8 @@ import { RegistroPage } from './../pages/registro/registro';
 
 import { TabPrincipalPage } from '../pages/tab-principal/tab-principal';
 import { DatabaseProvider } from '../providers/database/database';
+import { ConnectProvider } from '../providers/connect/connect';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { DatabaseProvider } from '../providers/database/database';
     SplashScreen,
     
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DatabaseProvider
+    DatabaseProvider,
+    ConnectProvider
   ]
 })
 export class AppModule {}
